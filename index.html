@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Sushma Rajasekaran</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="Resume.pdf" download="Sushma_Rajasekaran_Resume.pdf">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/avatar.jpg" alt="Profile picture" />
+        <div class="typewriter-container">
+          <p style="color:var(--clr-light);">
+              I am a <span id="wordDisplay"></span>
+              <span class="cursor">|</span>
+          </p>
+      </div>
+        <h1 class="hero__title">
+          FULL - STACK <br />
+          WEB DEVELOPER.
+        </h1>
+        <p class="hero__description">
+          A passionate <strong>Frontend / Fullstack</strong> web
+          developer and <strong>UI/UX</strong>
+          enthusiast specialized in building stunning pixel-perfect interactive
+          websites/applications.
+        </p>
+        <button class="hero__btn btn" id="copyEmailButton">Reach out</button>
+<p id="feedbackMessage" style="color: white; margin-top: 10px;"></p>
+        
+
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            👋 Hello there! I'm Sushma, a budding
+            <strong>Frontend / Fullstack</strong> web developer and self-proclaimed coffee connoisseur (seriously, I run on caffeine).
+            🎨 When I'm not crafting code, I’m channeling my creative side by tinkering with design tools like Figma and dreaming up user experiences that make people smile.
+
+            
+            
+          </p>
+          <p class="about__description">
+            🌟 I love learning new skills, geeking out over the latest tech trends, and occasionally breaking into spontaneous dance sessions (life needs a little rhythm, right?).
+          </p>
+       
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">JavaScript (ES6+)</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">Node.js</li>
+              <li class="about__list">TailwindCSS, Bootstrap</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Python</li>
+              <li class="about__list">Git,GitHub</li>
+              <li class="about__list">Mysql</li>
+            </ul>
+          </div>
+        </div>
+        
+       
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Postgraduate Diploma in Full-Stack Software Development</h3>
+                <p>Lambton College, Toronto <br> 2023 - 2025</p>
+                <p>Specialized in full-stack development, focusing on web technologies.</p>
+              </div>
+            </div>
+        
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Postgraduate Diploma in Computer science</h3>
+                <p>Stella Maris, Chennai <br> 2022 - 2023</p>
+                <p>Achieved a GPA of 8.92/10 while building a strong foundation in computer science concepts.</p>
+              </div>
+            </div>
+        
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Bachelour of Computer Application</h3>
+                <p>Madras University<br> 2019 - 2022</p>
+                <p>Focused on basic programming skills, Data Structures , Programming paradigms and for problem-solving.</p>
+              </div>
+            </div>
+          </div>
+        
+      </section>
+    
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          I am a passionate and dedicated self-taught developer, constantly building and experimenting with applications to enhance my skills and deepen my understanding of web design and development. My love for clean, user-focused designs drives my learning journey.
+        </p>
+      
+        <a class="mobile-nav__btn btn" href="https://github.com/Sushi1005" target="_blank" style="margin-bottom: 50px;">GitHub</a>
+       
+        <div class="work__container">
+          
+       
+          
+        </div>
+      </section>
+     
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Sushma Rajasekaran ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+  <script>
+    let wordIndex = 0;
+    const words = ["Student", "Creator","Designer","Developer",];
+    const wordDisplay = document.getElementById("wordDisplay");
+    const cursor = document.querySelector(".cursor");
+    let currentWord = '';
+    let charIndex = 0;
+    let typingSpeed = 150;
+    let eraseSpeed = 100;
+    let pauseTime = 1000;
+
+    function type() {
+        if (charIndex < words[wordIndex].length) {
+            currentWord += words[wordIndex].charAt(charIndex);
+            wordDisplay.textContent = currentWord;
+            charIndex++;
+            setTimeout(type, typingSpeed);
+        } else {
+            setTimeout(erase, pauseTime);
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            currentWord = currentWord.slice(0, -1);
+            wordDisplay.textContent = currentWord;
+            charIndex--;
+            setTimeout(erase, eraseSpeed);
+        } else {
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(type, pauseTime);
+        }
+    }
+
+    // Start typing when the page loads
+    window.onload = type;
+
+    document.getElementById("copyEmailButton").addEventListener("click", async () => {
+        const email = "sushiraj1005@gmail.com";
+        const feedback = document.getElementById("feedbackMessage");
+
+        try {
+            await navigator.clipboard.writeText(email);
+            feedback.textContent = "Email copied to clipboard!";
+            setTimeout(() => {
+                feedback.textContent = "";
+            }, 2000);
+        } catch (error) {
+            feedback.textContent = "Failed to copy email. Please try again.";
+        }
+    });
+</script>
+</html>
