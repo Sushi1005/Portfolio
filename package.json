@@ -10,7 +10,7 @@
   "devDependencies": {
     "vite": "^4.2.0"
   },
-  { "engines": {
+   "engines": {
     "node": "16.x"
   },
 }
